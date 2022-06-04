@@ -89,6 +89,7 @@ function gameStart(){
 function scoreMaker(){
     if (localStorage.getItem("bestScore") = null){
         localStorage.setItem("bestScore", roundCounter);
+        return;
     }
     if (localStorage.getItem("bestScore") > roundCounter){
         localStorage.removeItem("bestScore");
