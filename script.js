@@ -8,6 +8,7 @@ let roundCounter = 0;
 gameStart();
 function gameStart(){
     createCards(game.createCardsTypes());
+    roundCounter = 0;
 }
 
 // Cria e caracteriza os espaços para as cartas
@@ -41,7 +42,6 @@ function gameStart(){
                         console.log(roundCounter);
                         if (game.gameOverCheck()){
                             scoreMaker();
-                            roundCounter = 0;
                             setTimeout(() => {
                             let gameOverDisplay = document.getElementById("gameOver");
                             let scoreDisplay = document.getElementById("score");
@@ -87,7 +87,7 @@ function gameStart(){
 
 // Confere o melhor record e o insere no storage
 function scoreMaker(){
-    if (localStorage.getItem("bestScore") == null){
+    if (localStorage.getItem("bestScore") = null){
         localStorage.setItem("bestScore", roundCounter);
     }
     if (localStorage.getItem("bestScore") > roundCounter){
