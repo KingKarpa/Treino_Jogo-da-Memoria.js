@@ -87,7 +87,7 @@ function gameStart(){
 
 // Confere o melhor record e o insere no storage
 function scoreMaker(){
-    if (localStorage.getItem("bestScore") = null){
+    if (localStorage.getItem("bestScore") == null){
         localStorage.setItem("bestScore", roundCounter);
         return;
     }
