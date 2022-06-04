@@ -41,6 +41,7 @@ function gameStart(){
                         console.log(roundCounter);
                         if (game.gameOverCheck()){
                             scoreMaker();
+                            roundCounter = 0;
                             setTimeout(() => {
                             let gameOverDisplay = document.getElementById("gameOver");
                             let scoreDisplay = document.getElementById("score");
@@ -86,6 +87,9 @@ function gameStart(){
 
 // Confere o melhor record e o insere no storage
 function scoreMaker(){
+    if (localStorage.getItem("bestScore") == null){
+        localStorage.setItem("bestScore", roundCounter);
+    }
     if (localStorage.getItem("bestScore") > roundCounter){
         localStorage.removeItem("bestScore");
         localStorage.setItem("bestScore", roundCounter);
