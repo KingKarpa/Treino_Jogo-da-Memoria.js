@@ -1,4 +1,4 @@
 # Jogo-da-Memoria
 Projeto que simula um jogo da memória com 20 cartas, ou seja, 10 pares. <br>
 Criado com o uso das tecnologias: HTML, CSS e JS. <br>
-[Teste Aqui!](https://nicolasolivr.github.io/Jogo-da-Memoria/)
+[Teste Aqui!](https://KingKarpa.github.io/Jogo-da-Memoria/)
